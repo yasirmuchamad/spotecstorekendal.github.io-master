@@ -1,0 +1,102 @@
+html {
+  font-family: 'Montserrat';
+  font-size: 14px;
+}
+
+.navbar #navbarDropdown, .navbar .dropdown-item {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+
+.navbar #navbarDropdown {
+  color: #FFFFFF;
+}
+
+.navbar .dropdown-item {
+  color: #128724;
+}
+
+
+@media (max-width: 576px) {
+  .navbar .navbar-brand img {
+    height: auto;
+    width: 140px;
+  }
+
+  .navbar #navbarDropdown, .navbar .dropdown-item {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .carousel-item {
+    margin-top: -50px;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    max-width: 300px;
+  }
+
+  .single-banner {
+    margin-bottom: 15px;
+    overflow: hidden;
+  }
+
+  .single-banner a img {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 577px) {
+  .navbar .navbar-brand img {
+    height: auto;
+    width: 160px;
+  }
+
+  .carousel-item {
+    margin-top: -145px;
+    margin-bottom: 12px;
+  }
+
+  .single-banner {
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+
+  .single-banner a {
+    display: block;
+    float: left;
+    /* margin-right: 50px; */
+  }
+
+  .single-product {
+    margin-bottom: 30px !important;
+  }
+
+  .footer-area-1 {
+    background-color: #128724;
+    color: #FFFFFF;
+    /* text-align: center; */
+  }
+
+  .footer-top-area .container .row {
+    padding: 30px;
+  }
+
+  .footer-about {
+    text-align: left;
+    margin-left: 100px;
+  }
+
+  .footer-menu {
+    text-align: left;
+    margin-left: 100px;
+  }
+
+  .footer-about img {
+    height: auto;
+    width: 160px;
+  }
+}

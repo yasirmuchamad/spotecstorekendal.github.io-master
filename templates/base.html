@@ -1,0 +1,34 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>{{ title }}</title>
+    {% include "snippets/styles.html" %} {# berisi link-link css vendor #}
+    
+
+    {% block appcss %}
+      <link rel="stylesheet" href="{% static 'css/styles.css' %}"> {# berisi link-link css custom #}
+    {% endblock appcss %}
+  </head>
+  <body>
+    {% include "snippets/navbar.html" %} {# berisi code navbar #}
+    <header>
+      {% block header %}
+
+      {% endblock header %}
+    </header>
+
+    <main>
+      {% block main %}
+
+      {% endblock main %}
+    </main>
+
+    {% include "snippets/footer.html" %} {# berisi code footer #}
+    {% include "snippets/script.html" %} {# berisi link-link scripts vendor #}
+  </body>
+</html>
